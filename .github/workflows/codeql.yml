@@ -47,7 +47,7 @@ jobs:
       run: |
         # Compile all Java files
         mkdir -p out
-        javac -d out $(find . -name "*.java")
+        javac -d out *.java
 
     - name: "Perform CodeQL Analysis"
       uses: github/codeql-action/analyze@v2
